@@ -1,0 +1,13 @@
+br/com/teste/netshoes/stream/EncontraChar.class
+br/com/teste/netshoes/service/EnderecoService.class
+br/com/teste/netshoes/TesteNetshoesApplication.class
+br/com/teste/netshoes/exceptions/EnderecoException.class
+br/com/teste/netshoes/utils/Util.class
+br/com/teste/netshoes/repository/EnderecoRepository.class
+br/com/teste/netshoes/controller/EnderecoController.class
+br/com/teste/netshoes/stream/StreamImpl.class
+br/com/teste/netshoes/exceptions/ExceptionController.class
+br/com/teste/netshoes/entity/Endereco.class
+br/com/teste/netshoes/exceptions/CampoObrigatorioException.class
+br/com/teste/netshoes/stream/Stream.class
+br/com/teste/netshoes/service/EnderecoServiceInterface.class

@@ -1,0 +1,13 @@
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/utils/Util.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/stream/StreamImpl.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/repository/EnderecoRepository.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/controller/EnderecoController.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/TesteNetshoesApplication.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/exceptions/CampoObrigatorioException.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/stream/EncontraChar.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/stream/Stream.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/service/EnderecoService.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/exceptions/EnderecoException.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/exceptions/ExceptionController.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/entity/Endereco.java
+/opt/otherProjects/workspace/Crud-Spring-Boot/src/main/java/br/com/teste/netshoes/service/EnderecoServiceInterface.java

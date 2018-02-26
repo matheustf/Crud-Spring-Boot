@@ -1,0 +1,184 @@
+org.eclipse.m2e.logback.configuration: The org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.  Will retry after the state location is initialized.
+org.eclipse.m2e.logback.configuration: Logback config file: /opt/otherProjects/workspace/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.8.2.20171007-0217.xml
+org.eclipse.m2e.logback.configuration: Initializing logback
+18:14:45,225 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+18:14:45,225 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:14:45,225 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+18:14:45,225 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Setting up default configuration.
+18:14:45,406 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+18:14:45,410 |-INFO in ReconfigureOnChangeFilter{invocationCounter=0} - Will scan for changes in [[/opt/otherProjects/workspace/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.8.2.20171007-0217.xml]] every 60 seconds. 
+18:14:45,410 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Adding ReconfigureOnChangeFilter as a turbo filter
+18:14:45,419 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:14:45,419 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+18:14:45,534 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+18:14:45,540 |-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ch.qos.logback.core.rolling.RollingFileAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.RollingFileAppender
+	at ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.RollingFileAppender
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:73)
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:48)
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:35)
+	at 	at ch.qos.logback.core.joran.action.AppenderAction.begin(AppenderAction.java:54)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.callBeginAction(Interpreter.java:275)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.startElement(Interpreter.java:147)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.startElement(Interpreter.java:129)
+	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:50)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:149)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:135)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:99)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:49)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:185)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at 	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at 	at java.util.TimerThread.run(Timer.java:505)
+Caused by: java.lang.ClassNotFoundException: ch.qos.logback.core.rolling.RollingFileAppender cannot be found by ch.qos.logback.classic_1.1.2.v20160208-0839
+	at 	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at 	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:60)
+	at 	... 17 common frames omitted
+18:14:45,540 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@11:81 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.RollingFileAppender
+	at ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.RollingFileAppender
+	at 	at ch.qos.logback.core.joran.action.AppenderAction.begin(AppenderAction.java:82)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.callBeginAction(Interpreter.java:275)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.startElement(Interpreter.java:147)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.startElement(Interpreter.java:129)
+	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:50)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:149)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:135)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:99)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:49)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:185)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at 	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at 	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at 	at java.util.TimerThread.run(Timer.java:505)
+Caused by: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.RollingFileAppender
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:73)
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:48)
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:35)
+	at 	at ch.qos.logback.core.joran.action.AppenderAction.begin(AppenderAction.java:54)
+	at 	... 14 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ch.qos.logback.core.rolling.RollingFileAppender cannot be found by ch.qos.logback.classic_1.1.2.v20160208-0839
+	at 	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at 	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:60)
+	at 	... 17 common frames omitted
+18:14:45,541 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [org.eclipse.m2e.logback.appender.EclipseLogAppender]
+18:14:45,542 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [EclipseLog]
+18:14:45,552 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [org.eclipse.m2e.logback.appender.MavenConsoleAppender]
+18:14:45,557 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [MavenConsoleLog]
+18:14:45,557 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+18:14:45,557 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [FILE]. Did you define it below instead of above in the configuration file?
+18:14:45,557 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+18:14:45,558 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+18:14:45,558 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [EclipseLog] to Logger[ROOT]
+18:14:45,558 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [MavenConsoleLog] to Logger[ROOT]
+18:14:45,558 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.ning.http.client] to INFO
+18:14:45,558 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+18:14:45,558 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@2cbf0741 - Registering current configuration as safe fallback point
+
+18:15:48.466 [Background Thread-1 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: usuarioRepositoryImpl br.com.money.business.repository.UsuarioRepositoryImpl
+18:15:48.476 [Background Thread-1 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate - Spring Data JPA - Registering repository: usuarioRepository - Interface: br.com.money.business.repository.UsuarioRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+18:15:59.420 [Background Thread-1 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate - Spring Data JPA - Registering repository: clienteRepository - Interface: com.evento.repository.ClienteRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+18:16:03.110 [Background Thread-1 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate - Spring Data JPA - Registering repository: clienteRepositoryInterface - Interface: br.com.freetime.ClienteRepositoryInterface - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+18:16:03.126 [Background Thread-1 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate - Spring Data JPA - Registering repository: usuarioRepositoryInterface - Interface: br.com.freetime.UsuarioRepositoryInterface - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+Downloading http://aetherial.cfapps.io/boot/typegraph/1.5.10.RELEASE to /opt/otherProjects/workspace/.metadata/.plugins/org.springframework.ide.eclipse.boot/typegraphs/1.5.10.RELEASE
+Memory pressure relief: Total: res = 8421376/8417280/-4096, res+swap = 4931584/4911104/-20480
+Memory pressure relief: Total: res = 8417280/8413184/-4096, res+swap = 4911104/4907008/-4096
+Memory pressure relief: Total: res = 7708672/7696384/-12288, res+swap = 4227072/4198400/-28672
+Memory pressure relief: Total: res = 8343552/8372224/28672, res+swap = 4874240/4870144/-4096
+Memory pressure relief: Total: res = 8368128/8368128/0, res+swap = 4866048/4866048/0
+Memory pressure relief: Total: res = 8368128/8368128/0, res+swap = 4866048/4866048/0
+Memory pressure relief: Total: res = 8368128/8372224/4096, res+swap = 4870144/4870144/0
+Memory pressure relief: Total: res = 8368128/8368128/0, res+swap = 4866048/4870144/4096
+Memory pressure relief: Total: res = 8368128/8372224/4096, res+swap = 4870144/4870144/0
+Memory pressure relief: Total: res = 8372224/8376320/4096, res+swap = 4874240/4874240/0
+Memory pressure relief: Total: res = 8376320/8376320/0, res+swap = 4874240/4874240/0
+Memory pressure relief: Total: res = 8376320/8376320/0, res+swap = 4874240/4874240/0
+Memory pressure relief: Total: res = 8376320/8380416/4096, res+swap = 4878336/4878336/0
+Memory pressure relief: Total: res = 8372224/8417280/45056, res+swap = 4878336/5128192/249856
+21:46:58.436 [Background Thread-2 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate - Spring Data JPA - Registering repository: clienteRepository - Interface: br.com.freetime.repository.ClienteRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+21:46:58.443 [Background Thread-2 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate - Spring Data JPA - Registering repository: eventoRepository - Interface: br.com.freetime.repository.EventoRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+21:46:58.444 [Background Thread-2 (Spring IDE/3.9.1)] DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate - Spring Data JPA - Registering repository: usuarioRepository - Interface: br.com.freetime.repository.UsuarioRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+Memory pressure relief: Total: res = 6868992/7393280/524288, res+swap = 3227648/3723264/495616
+Memory pressure relief: Total: res = 8593408/8585216/-8192, res+swap = 4984832/4960256/-24576
+Memory pressure relief: Total: res = 8581120/8577024/-4096, res+swap = 4956160/4952064/-4096
+Memory pressure relief: Total: res = 8577024/8581120/4096, res+swap = 4956160/4956160/0
+Memory pressure relief: Total: res = 8581120/8581120/0, res+swap = 4956160/4956160/0
+Memory pressure relief: Total: res = 8744960/8720384/-24576, res+swap = 5136384/5103616/-32768
+Memory pressure relief: Total: res = 8708096/8708096/0, res+swap = 5095424/5091328/-4096
+Memory pressure relief: Total: res = 8695808/8695808/0, res+swap = 5079040/5083136/4096
+Memory pressure relief: Total: res = 7905280/7811072/-94208, res+swap = 4247552/4153344/-94208
+Memory pressure relief: Total: res = 8581120/8577024/-4096, res+swap = 4980736/4935680/-45056
+Memory pressure relief: Total: res = 8577024/8577024/0, res+swap = 4939776/4935680/-4096
+Memory pressure relief: Total: res = 8577024/8577024/0, res+swap = 4935680/4935680/0
+Memory pressure relief: Total: res = 8577024/8581120/4096, res+swap = 4939776/4939776/0
+Memory pressure relief: Total: res = 9756672/9719808/-36864, res+swap = 6107136/6070272/-36864
+Memory pressure relief: Total: res = 8843264/8785920/-57344, res+swap = 5197824/5140480/-57344
+Memory pressure relief: Total: res = 8724480/8720384/-4096, res+swap = 5079040/5074944/-4096
+Memory pressure relief: Total: res = 8720384/8720384/0, res+swap = 5074944/5074944/0
+fev 25, 2018 10:14:12 PM ClientCommunicatorAdmin Checker-run
+ADVERTÊNCIA: Failed to check connection: java.net.ConnectException: Conexão recusada (Connection refused)
+fev 25, 2018 10:14:12 PM ClientCommunicatorAdmin Checker-run
+ADVERTÊNCIA: stopping
+Memory pressure relief: Total: res = 9154560/9003008/-151552, res+swap = 5525504/5369856/-155648
+Memory pressure relief: Total: res = 8962048/8962048/0, res+swap = 5328896/5328896/0
+Memory pressure relief: Total: res = 8962048/8966144/4096, res+swap = 5332992/5332992/0
+Memory pressure relief: Total: res = 9101312/9080832/-20480, res+swap = 5480448/5447680/-32768
+Memory pressure relief: Total: res = 9072640/9072640/0, res+swap = 5443584/5439488/-4096
+Memory pressure relief: Total: res = 9019392/8994816/-24576, res+swap = 5386240/5361664/-24576
+Memory pressure relief: Total: res = 8978432/8978432/0, res+swap = 5345280/5345280/0
+Memory pressure relief: Total: res = 9723904/9691136/-32768, res+swap = 6078464/6045696/-32768
+Memory pressure relief: Total: res = 9592832/9592832/0, res+swap = 5947392/5947392/0
+Memory pressure relief: Total: res = 9793536/9703424/-90112, res+swap = 6148096/6057984/-90112
+Memory pressure relief: Total: res = 9678848/9678848/0, res+swap = 6033408/6033408/0
+Memory pressure relief: Total: res = 9678848/9682944/4096, res+swap = 6037504/6037504/0
+Memory pressure relief: Total: res = 9682944/9682944/0, res+swap = 6037504/6037504/0
+Memory pressure relief: Total: res = 9662464/9662464/0, res+swap = 6017024/6021120/4096
