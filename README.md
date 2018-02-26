@@ -1,3 +1,5 @@
+JPA, Hibernate, CRUD, H2 for test with input import.sql, maven, mysql, SpringBootTest, Spring profile (test ...)
+
 # Crud Spring Boot - Endereço
 
 # Tecnologias
