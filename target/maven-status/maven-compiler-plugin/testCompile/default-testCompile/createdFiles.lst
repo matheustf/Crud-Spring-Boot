@@ -1,7 +1,5 @@
+br/com/teste/netshoes/TestImportDataBase.class
 br/com/teste/netshoes/TestBuscaCep.class
 br/com/teste/netshoes/TestStream.class
-br/com/teste/netshoes/Dinossauro.class
-br/com/teste/netshoes/DinossauroRepository.class
-br/com/teste/netshoes/TestImportDataBase.class
 br/com/teste/netshoes/TestCrudEndereco.class
 br/com/teste/netshoes/TesteNetshoesApplicationTests.class

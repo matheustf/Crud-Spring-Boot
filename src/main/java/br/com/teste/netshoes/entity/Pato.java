@@ -1,4 +1,4 @@
-package br.com.teste.netshoes;
+package br.com.teste.netshoes.entity;
 
 import java.io.Serializable;
 
@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Dinossauro implements Serializable {
+public class Pato implements Serializable {
 
 	@Id
 	@GeneratedValue
@@ -25,7 +25,7 @@ public class Dinossauro implements Serializable {
 	@Column(nullable = false)
 	private String pula;
 
-	public Dinossauro() {
+	public Pato() {
 
 	}
 

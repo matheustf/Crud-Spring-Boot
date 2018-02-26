@@ -1,8 +1,6 @@
 package br.com.teste.netshoes;
 
 import static org.junit.Assert.assertEquals;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.util.List;
 
@@ -10,23 +8,16 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.http.MediaType;
-import org.springframework.stereotype.Repository;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.google.gson.Gson;
-
-import br.com.teste.netshoes.entity.Endereco;
-import br.com.teste.netshoes.repository.EnderecoRepository;
+import br.com.teste.netshoes.entity.Pato;
+import br.com.teste.netshoes.repository.PatoRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = TesteNetshoesApplication.class, webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -37,7 +28,7 @@ public class TestImportDataBase {
 	private WebApplicationContext wac;
 	
 	@Autowired
-	DinossauroRepository repository;
+	PatoRepository repository;
 
 	@Before
 	public void setup() {
@@ -47,9 +38,9 @@ public class TestImportDataBase {
 	/**** Testes Para Inclusão ***/
 	@Test
 	 public void testVerificaCampoNaBase() throws Exception {
-		List<Dinossauro> result = repository.findAll();
+		List<Pato> result = repository.findAll();
 		assertEquals(1, result.size());
-		assertEquals("PATO_VEIO", ((Dinossauro)result.get(0)).getNome());
+		assertEquals("PATO_VEIO", ((Pato)result.get(0)).getNome());
 	 }
 	
 	
